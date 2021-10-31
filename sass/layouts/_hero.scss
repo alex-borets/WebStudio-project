@@ -1,29 +1,56 @@
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-image-480.jpg);
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-image-768.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-image-1600.jpg);
+  }
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 188px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
-  @include font(44px, 60px);
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--third-text-color);
-  max-width: 696px;
+
+  @include font(21px, 42px);
+  max-width: 320px;
+
+  @media screen and (min-width: 480px) {
+    @include font(26px, 42px);
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(44px, 60px);
+    max-width: 696px;
+  }
 }
 
 .hero-btn {

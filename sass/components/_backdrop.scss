@@ -1,5 +1,6 @@
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   @extend %aling-items;
   top: 0;
   width: 100vw;

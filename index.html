@@ -19,12 +19,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body>
     <!-- ================Шапка================ -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="header-container container">
         <a href="./index.html" class="logo header__logo link">
           <span class="logo__desc">Web</span>Studio
@@ -66,7 +65,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- ================Герой================ -->
@@ -169,7 +168,7 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/photo1.jpg" alt="Парень в бордовой рубашке" width="270" />
+              <img src="./images/photo1-450.jpg" alt="Парень в бордовой рубашке" width="450" />
               <div class="team-list__desc">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__position" lang="en">Product Designer</p>
@@ -227,7 +226,7 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/photo2.jpg" alt="Девушка в пиджаке" width="270" />
+              <img src="./images/photo2-450.jpg" alt="Девушка в пиджаке" width="450" />
               <div class="team-list__desc">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__position" lang="en">Frontend Developer</p>
@@ -285,7 +284,7 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/photo3.jpg" alt="Парень в голубой рубашке" width="270" />
+              <img src="./images/photo3-450.jpg" alt="Парень в голубой рубашке" width="450" />
               <div class="team-list__desc">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__position" lang="en">Product Designer</p>
@@ -343,7 +342,7 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/photo4.jpg" alt="Парень в черной футболке" width="270" />
+              <img src="./images/photo4-450.jpg" alt="Парень в черной футболке" width="450" />
               <div class="team-list__desc">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__position" lang="en">UI Designer</p>
@@ -492,17 +491,17 @@
 
     <!-- ================Футер================ -->
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-wrapper">
-          <a class="logo footer-logo link" href="./index.html">
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <a class="logo footer__logo link" href="./index.html">
             <span class="logo__desc">Web</span>Studio
           </a>
 
-          <address class="footer-adress">
+          <address class="footer__adress">
             <ul class="footer-list list">
               <li class="footer-list__item">
                 <a
-                  class="footer-list__link link footer-list__link_color_white"
+                  class="footer-list__link link footer-list__link_dark"
                   href="https://goo.gl/maps/fnWvEp41SZqMRHYs7"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -524,7 +523,7 @@
           </address>
         </div>
 
-        <div class="footer-wrapper">
+        <div class="footer__wrapper">
           <p class="join-us">Присоединяйтесь</p>
           <ul class="social-list list">
             <li class="social-list__item">
@@ -580,7 +579,7 @@
           </ul>
         </div>
 
-        <div class="footer-wrapper subscribe">
+        <div class="footer__wrapper subscribe">
           <p class="subscribe__title">Подпишитесь на рассылку</p>
           <form class="subscribe-form" action="#">
             <input class="subscribe-form__input" type="email" name="mail" placeholder="E-mail" />
@@ -655,8 +654,10 @@
                 <use href="./images/icons.svg#icon-checked"></use>
               </svg>
             </span>
-            Соглашаюсь с рассылкой и принимаю&#160;
-            <a href="" class="modal__link link">Условия договора</a>
+            <span class="modal__check-text-wrapper">
+              Соглашаюсь с рассылкой и принимаю&#160;
+              <a href="" class="modal__link link">Условия договора</a>
+            </span>
           </label>
 
           <button type="submit" class="modal__btn btn">Отправить</button>
