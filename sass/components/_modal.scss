@@ -7,10 +7,6 @@
   max-width: 450px;
   min-height: 609px;
 
-  @media screen and (max-height: 608px) {
-    height: 100%;
-  }
-
   @media screen and (min-width: 1200px) {
     max-width: 528px;
     min-height: 581px;

@@ -13,4 +13,9 @@
     visibility: hidden;
     pointer-events: none;
   }
+
+  &.is-hidden .modal {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
