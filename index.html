@@ -234,21 +234,36 @@
           <ul class="work-list list">
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img src="./images/image1.jpg" alt="Руки на клавиатуре" width="370" />
+                <img
+                  srcset="./images/image1.jpg 1x, ./images/image1-2x.jpg 2x"
+                  src="./images/image1.jpg"
+                  alt="Руки на клавиатуре"
+                  width="370"
+                />
                 <p class="work-list__desc">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img src="./images/image2.jpg" alt="Телефон в руке" width="370" />
+                <img
+                  srcset="./images/image2.jpg 1x, ./images/image2-2x.jpg 2x"
+                  src="./images/image2.jpg"
+                  alt="Телефон в руке"
+                  width="370"
+                />
                 <p class="work-list__desc">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="work-list__item">
               <div class="work-list__wrapper">
-                <img src="./images/image3.jpg" alt="Планшет в руках" width="370" />
+                <img
+                  srcset="./images/image3.jpg 1x, ./images/image3-2x.jpg 2x"
+                  src="./images/image3.jpg"
+                  alt="Планшет в руках"
+                  width="370"
+                />
                 <p class="work-list__desc">Дизайнерские решения</p>
               </div>
             </li>
@@ -262,7 +277,24 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/photo1-450.jpg" alt="Парень в бордовой рубашке" width="450" />
+              <picture>
+                <source
+                  srcset="./images/photo1.jpg 1x, ./images/photo1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/photo1-tab.jpg 1x, ./images/photo1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/photo1-mob.jpg 1x, ./images/photo1-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./images/photo1.jpg" alt="Парень в бордовой рубашке" width="450" />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__position" lang="en">Product Designer</p>
@@ -320,7 +352,24 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/photo2-450.jpg" alt="Девушка в пиджаке" width="450" />
+              <picture>
+                <source
+                  srcset="./images/photo2.jpg 1x, ./images/photo2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/photo2-tab.jpg 1x, ./images/photo2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/photo2-mob.jpg 1x, ./images/photo2-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./images/photo2.jpg" alt="Девушка в пиджаке" width="450" />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__position" lang="en">Frontend Developer</p>
@@ -378,7 +427,24 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/photo3-450.jpg" alt="Парень в голубой рубашке" width="450" />
+              <picture>
+                <source
+                  srcset="./images/photo3.jpg 1x, ./images/photo3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/photo3-tab.jpg 1x, ./images/photo3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/photo3-mob.jpg 1x, ./images/photo3-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./images/photo3.jpg" alt="Парень в голубой рубашке" width="450" />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__position" lang="en">Product Designer</p>
@@ -436,7 +502,24 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/photo4-450.jpg" alt="Парень в черной футболке" width="450" />
+              <picture>
+                <source
+                  srcset="./images/photo4.jpg 1x, ./images/photo4-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/photo4-tab.jpg 1x, ./images/photo4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/photo4-mob.jpg 1x, ./images/photo4-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./images/photo4.jpg" alt="Парень в черной футболке" width="450" />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__position" lang="en">UI Designer</p>
