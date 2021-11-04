@@ -21,9 +21,6 @@
 }
 
 .menu-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
   padding: 0;
   cursor: pointer;
 
@@ -44,13 +41,18 @@
 }
 
 .close-btn {
-  margin-left: auto;
-  margin-bottom: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .menu-btn__icon {
   height: 40px;
   width: 40px;
+}
+
+.contacts-list {
+  margin-bottom: 64px;
 }
 
 .mobile-nav__item {
@@ -97,7 +99,7 @@
 .mobile-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 64px;
+  margin-top: -10px;
 }
 
 .mobile-social-list__item {
@@ -105,6 +107,7 @@
   @include font(18px, 22px);
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-top: 10px;
 
   &:not(:last-child) {
     margin-right: 10px;
